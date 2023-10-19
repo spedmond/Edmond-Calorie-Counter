@@ -1,3 +1,21 @@
-footer {
+body {
+    font-family:sans-serif;
+}
+
+.box {
+    border-radius:25px;
+    background: #ff8063;
+    padding: 20px;
+    width: 250px;
+    height: 320px;
+}
+
+button {
+    border-radius:5px;
+    border-width: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+h1 {
     text-align: center;
 }
