@@ -103,18 +103,23 @@ function display() {
     let dessertCOutput = document.getElementById("dessertC");
     let dessertFOutput = document.getElementById("dessertF");
     /*----------------------------------------------------------*/
-    appCalOutput.textContent = appF*9 + appC*4 + appP*4;
+    let totalCalOutput = document.getElementById("total-cal");
+    /*----------------------------------------------------------*/
+    appCalOutput.textContent = appCal = appF*9 + appC*4 + appP*4;
     appPOutput.textContent = appP;
     appCOutput.textContent = appC;
     appFOutput.textContent = appF;
     /*----------------------------------------------------------*/
-    entreeCalOutput.textContent = entreeF*9 + entreeC*4 + entreeP*4;
+    entreeCalOutput.textContent = entreeCal =entreeF*9 + entreeC*4 + entreeP*4;
     entreePOutput.textContent = entreeP;
     entreeCOutput.textContent = entreeC;
     entreeFOutput.textContent = entreeF;
     /*----------------------------------------------------------*/
-    dessertCalOutput.textContent = dessertF*9 + dessertC*4 + dessertP*4;
+    dessertCalOutput.textContent = dessertCal = dessertF*9 + dessertC*4 + dessertP*4;
     dessertPOutput.textContent = dessertP;
     dessertCOutput.textContent = dessertC;
     dessertFOutput.textContent = dessertF;
+    /*----------------------------------------------------------*/
+    totalCalOutput.textContent = appCal + entreeCal + dessertCal;
+
 }
