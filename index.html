@@ -9,10 +9,12 @@
     <link rel="stylesheet" href = "style.css">
 </head>
 <body>
-    <h1>Calorie Counter</h1>
+    <h1>Calorie Counter by Edmond Song</h1>
+
+    <h2>Total Calories: <span id = total-cal>0</span></h2>
 
     <div class = "box">
-        <h2>Appetizer: <span id = "app-cal">0</span> calories</h2>
+        <h2>Appetizer: <span class = "macro" id = "app-cal">0</span> calories</h2>
         <h3>Protein: <span id = "appP">0</span>g</h3>
         <button onclick = "update('a','p',true,5)">--</button> <button onclick = "update('a','p',true,1)">-</button> <button onclick = "update('a','p',false,1)">+</button> <button onclick = "update('a','p',false,5)">++</button>
         <h3>Carbs: <span id = "appC">0</span>g</h3>
@@ -20,9 +22,9 @@
         <h3>Fat: <span id = "appF">0</span>g</h3>
         <button onclick = "update('a','f',true,5)">--</button> <button onclick = "update('a','f',true,1)">-</button> <button onclick = "update('a','f',false,1)">+</button> <button onclick = "update('a','f',false,5)">++</button>
     </div>
-
+<br/>
     <div class = "box">
-        <h2>Entree: <span id = "entree-cal">0</span> calories</h2>
+        <h2>Entree: <span class = "macro" id = "entree-cal">0</span> calories</h2>
         <h3>Protein: <span id = "entreeP">0</span>g</h3>
         <button onclick = "update('e','p',true,5)">--</button> <button onclick = "update('e','p',true,1)">-</button> <button onclick = "update('e','p',false,1)">+</button> <button onclick = "update('e','p',false,5)">++</button>
         <h3>Carbs: <span id = "entreeC">0</span>g</h3>
@@ -30,9 +32,9 @@
         <h3>Fat: <span id = "entreeF">0</span>g</h3>
         <button onclick = "update('e','f',true,5)">--</button> <button onclick = "update('e','f',true,1)">-</button> <button onclick = "update('e','f',false,1)">+</button> <button onclick = "update('e','f',false,5)">++</button>
     </div>
-
+<br/>
     <div class = "box">
-        <h2>Dessert: <span id = "dessert-cal">0</span> calories</h2>
+        <h2>Dessert: <span class = "macro" id = "dessert-cal">0</span> calories</h2>
         <h3>Protein: <span id = "dessertP">0</span>g</h3>
         <button onclick = "update('d','p',true,5)">--</button> <button onclick = "update('d','p',true,1)">-</button> <button onclick = "update('d','p',false,1)">+</button> <button onclick = "update('d','p',false,5)">++</button>
         <h3>Carbs: <span id = "dessertC">0</span>g</h3>
@@ -40,7 +42,5 @@
         <h3>Fat: <span id = "dessertF">0</span>g</h3>
         <button onclick = "update('d','f',true,5)">--</button> <button onclick = "update('d','f',true,1)">-</button> <button onclick = "update('d','f',false,1)">+</button> <button onclick = "update('d','f',false,5)">++</button>
     </div>
-
-    <footer>&copy; Edmond Song</footer>
 </body>
 </html>
